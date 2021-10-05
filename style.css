@@ -51,19 +51,12 @@ p {
 
 .main {
     min-height: 100vh;
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
 }
 
 .container {
-    /* border: 1px solid; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* min-height: 100vh; */
     width: 100%;
     max-width: 730px;
 }
@@ -114,15 +107,9 @@ input {
     font-size: var(--input-font-size);
     line-height: var(--input-line-height);
     background: var(--bgd-div-color);
-    /* background-size: 24px 24px; */
-    /* padding: 22px 0 22px 80px; */
     border: 0;
 
 }
-
-/* input::placeholder {
-    margin-left: 80px;
-} */
 
 button {
     font-family: var(--font-family);
@@ -144,7 +131,6 @@ button {
 }
 
 .first-section {
-    border: 1px solid;
     margin-bottom: 21px;
     display: flex;
     justify-content: space-between;
@@ -155,7 +141,6 @@ button {
 }
 
 .image {
-    border: 1px solid;
     width: 117px;
     height: 117px;
     margin-right: 37px;
@@ -163,13 +148,8 @@ button {
 }
 
 .profile {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
-}
-
-.date {
-    border: 1px solid;
 }
 
 .name {
@@ -181,7 +161,6 @@ button {
 }
 
 .link {
-    /* font-weight: var(--normal-font-weight); */
     font-size: var(--button-font-size);
     line-height: var(--button-line-height);
     color: var(--blue-color);
@@ -201,21 +180,18 @@ button {
 }
 
 .second-and-third-section {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     margin-left: 154px;
 }
 
 .second-section {
-    border: 1px solid;
     display: flex;
     flex-direction: row;
     margin-bottom: 37px;
     padding: 15px 83px 17px 32px;
     background: var(--bgd-color);
     border-radius: 10px;
-    /* margin-bottom: 37px; */
 }
 
 .repos {
@@ -240,13 +216,9 @@ button {
 }
 
 .third-section {
-    border: 1px solid;
     color: var(--placeholder-color);
     font-size: var(--date-font-size);
     line-height: var(--date-line-height);
-    /* padding-right: 51px; */
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .third-section-row {
@@ -265,22 +237,12 @@ button {
 }
 
 .location {
-    /* margin-right: 21%; */
-    /* width: 50%; */
     margin-left: 22px;
-    /* overflow: hidden; */
 }
 
-.website {
-    /* margin-right: 10%; */
+.twitter, .company, .website {
     margin-left: 16px;
-    /* width: 50%; */
-    /* overflow: hidden; */
-}
 
-.twitter, .company {
-    margin-left: 16px;
-    /* overflow: hidden; */
 }
 
 .bio-tablet {
@@ -296,10 +258,6 @@ button {
     line-height: var(--date-line-height);
     display: none;
 }
-
-/* .third-section-mobile {
-    display: none;
-} */
 
 .mode:hover {
     cursor: pointer;
@@ -319,6 +277,11 @@ input:focus {
 button:hover {
     cursor: pointer;
     background: var(--button-hover-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--placeholder-color);
 }
 
 a:hover {

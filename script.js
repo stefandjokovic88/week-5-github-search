@@ -51,10 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (!data.hasOwnProperty("message")) {
                     document.getElementById("warning").style.display = "none";
+    
                     document.getElementById("image").src = data.avatar_url;
 
                     if (data.name == null) {
-                        document.getElementById("name").innerHTML = "Name is not available";
+                        document.getElementById("name").innerHTML = data.login;
                     }
                     else {
                         document.getElementById("name").innerHTML = data.name;
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     let d = new Date(data.created_at);
                     let datestring = d.getDate()  + " " + d.toLocaleString('en-us',{month:'short'})+ " " + d.getFullYear();
                     document.getElementById("date").innerHTML = datestring;
+                    document.getElementById("date-tablet").innerHTML = datestring;
                 
                     document.getElementById("repos").innerHTML = data.public_repos;
                     document.getElementById("followers").innerHTML = data.followers;
@@ -103,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.getElementById("website").innerHTML = data.blog;
                         document.getElementById("website-img").classList.remove("icon-opacity");
                         document.getElementById("website").classList.remove("icon-opacity");
+                        document.getElementById("website").href = data.blog;
                     }
 
                     if (data.twitter_username == null) {
@@ -114,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.getElementById("twitter").innerHTML = data.twitter_username;
                         document.getElementById("twitter-img").classList.remove("icon-opacity");
                         document.getElementById("twitter").classList.remove("icon-opacity");
+                        document.getElementById("twitter").href = data.twitter_username;
                     }
 
                     if (data.company == null) {
@@ -125,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.getElementById("company").innerHTML = data.company;
                         document.getElementById("company-img").classList.remove("icon-opacity");
                         document.getElementById("company").classList.remove("icon-opacity");
+                        document.getElementById("company").href = data.company.substring(1);
                     }
                     
                 }
