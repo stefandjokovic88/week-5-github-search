@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body id="body">
+
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <p>devfinder</p>
+                <div class="mode" id="mode">
+                    <p id="mode-name">dark</p>
+                    <img src="assets/icon-moon.svg" alt="Moon" id="mode-img">
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search GitHub username..." id="input">
+                <p class="warning" id="warning">No results</p>
+                <button id="btn">Search</button>
+            </div>
+            <div class="content">
+                <div class="first-section">
+                    <div class="first-section-left">
+                        <img class="image" id="image" alt="Profile Image">
+
+                        <div class="profile">
+                            <p class="name" id="name">
+                                --
+                            </p>
+                            <p class="link" id="link">
+                                --
+                            </p>
+                            <p class="bio" id="bio">
+                                --
+                            </p>
+                            <p class="date-tablet" id="date-tablet">
+                                --
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="date" id="date">
+                        --
+                    </p>
+                <div class="bio-tablet" id="bio-tablet">
+                    --
+                </div>    
+                </div>
+                <div class="second-and-third-section">      
+                    <div class="second-section">
+                        <div class="repos">
+                            <p class="capture">Repos</p>
+                            <p class="number" id="repos">--</p>
+                        </div>
+                        <div class="followers">
+                            <p class="capture">Followers</p>
+                            <p class="number" id="followers">--</p>
+                        </div>
+                        <div class="following">
+                            <p class="capture">Following</p>
+                            <p class="number" id="following">--</p>
+                        </div>
+                    </div>
+                    <div class="third-section">
+                        <div class="third-section-row third-section-first-row">
+                            <div class="info">
+                                <img src="assets/icon-location.svg" alt="Location" class="icon" id="location-img">
+                                <p class="location" id="location">--</p>
+                            </div>
+                            <div class="info">
+                                <img src="assets/icon-twitter.svg" alt="Twitter" class="icon" id="twitter-img">
+                                <a class="twitter" id="twitter">--</a>
+                            </div>
+                        </div>
+                        <div class="third-section-row">
+                            <div class="info">
+                                <img src="assets/icon-website.svg" alt="Website" class="icon" id="website-img">
+                                <a class="website" id="website">--</a>
+                            </div>
+                            <div class="info">
+                                <img src="assets/icon-company.svg" alt="Company" class="icon" id="company-img">
+                                <a class="company" id="company">--</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
